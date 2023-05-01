@@ -15,7 +15,7 @@ namespace Riddles
       {
         Random rnd = new Random();
         int randomNumber = rnd.Next(12);
-        Console.WriteLine(randomNumber);
+        // Console.WriteLine(randomNumber);
         Console.WriteLine($"Riddle #{index}: {Sphinx.GetRiddle(randomNumber)} (enter a single word response)");
         string userResponse = Console.ReadLine();
         if (userResponse.ToLower() == Sphinx.GetAnswer(randomNumber))
